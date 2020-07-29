@@ -27,5 +27,5 @@ Backbone.$(document).ready(() => {
 	const lv = new layoutView();
 	lv.render();
 	window.layoutView= lv;
-	console.log("run to disable: window.layoutView.stopListening()");
+	console.log("disable with: window.layoutView.stopListening()");
 });
