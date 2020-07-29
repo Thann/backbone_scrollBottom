@@ -6,6 +6,12 @@ const fs = require('fs');
 const http = require('http');
 const webpack = require('webpack');
 const wpCfg = require('./webpack.config');
+
+if (process.argv.includes('--build')) {
+	console.log('building webpack...');
+	return webpack(wpCfg()).run((e,s) => console.log(s.toString({colors: true})));
+}
+
 const watcher = require('nodemon')(undefined, {
 	ignored: /.*test\/.*\.bundle.js/,
 });

@@ -10,6 +10,7 @@
   "license": "Unlicense",
   "scripts": {
     "lint": "eslint .",
+    "build": "node test/server --build",
     "test": "node test/server"
   },
   "peerDependencies": {
