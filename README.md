@@ -20,7 +20,7 @@ const someView = Backbone.View.extend({
 ```
 
 ### Example
-See [test/app.js](test/app.js) for an example.
+See [test/app.js](test/app.js) for an example. [demo](https://thann.github.com/backbone_scrollBottom)
 
 Run test server with `npm run test` then navigate to [localhost:3069](http://localhost:3069).
 
