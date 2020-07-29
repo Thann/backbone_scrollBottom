@@ -27,7 +27,7 @@ Object.assign(Backbone.View.prototype, {
 
 			// console.log("XXXX", scrollpos, length-screenHeight, scrollpos - (length-screenHeight) > 0);
 			if ((scrollpos - (length - screenHeight)) > 0) {
-				this.trigger('scroll:bottom');
+				this.trigger('scroll:bottom', ev);
 			}
 		}, debounce));
 

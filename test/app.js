@@ -10,15 +10,20 @@ const layoutView = Backbone.View.extend({
 	initialize() {
 		this._tmpl = _.template(this.template);
 		this.initScrollBottom();
-		this.listenTo(this, 'scroll:bottom', () => {
-			console.log("scrollbottom!!!!");
+		let i = 0;
+		this.on('scroll:bottom', (e) => {
+			i++;
+			console.log("scrollbottom!!!!", i, e);
+			this.render(i);
 		});
 	},
-	render() {
+	render(x) {
 		this.$el.html(this._tmpl());
 		// Add a bunch of nonsense
-		for (let i = 0; i < 100; i++) {
-			this.$el.append('<div> lame </div>');
+		for (let i = 0; i <= (x||0); i++) {
+			for (let j = 0; j < 100; j++) {
+				this.$el.append(`<div> lame: ${i}, ${j} </div>`);
+			}
 		}
 	},
 });

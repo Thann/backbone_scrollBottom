@@ -12,8 +12,8 @@ require('backbone_scrollbottom');
 const someView = Backbone.View.extend({
   initialize() {
     this.initScrollBottom();
-    this.listenTo(this, 'scroll:bottom', () => {
-      console.log("scrollbottom!!!!");
+    this.on('scroll:bottom', (e) => {
+      console.log("scrollbottom!!!!", e);
     });
   },
 });
