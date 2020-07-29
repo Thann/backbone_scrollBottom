@@ -1,0 +1,17 @@
+image: node:alpine
+stages:
+  - post
+
+pages:
+  stage: post
+  script:
+    - apk add git
+    - npm install
+    - npm run build
+    - mkdir public
+    - cp test/*.bundle.js test/index.html test/app.css public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
