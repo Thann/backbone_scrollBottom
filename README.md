@@ -1,14 +1,14 @@
-# backbone_scrollBottom
+# Backbone_scrollBottom
 Simple Backbone view addon that triggers an event when a view has been scrolled all the way down.
 
-install:
+Install:
 ```bash
-npm install thann/backbone_scrollBottom
+npm install thann/backbone_scrollbottom
 ```
 
-require in app & use in view:
+Require in app & use in view:
 ```js
-require('backbone_scrollBottom');
+require('backbone_scrollbottom');
 const someView = Backbone.View.extend({
   initialize() {
     this.initScrollBottom();

@@ -1,5 +1,5 @@
 {
-  "name": "backbone_scrollBottom",
+  "name": "backbone_scrollbottom",
   "version": "0.0.1",
   "description": "Simple Backbone view addon that triggers an event when a view has been scrolled all the way down.",
   "repository": {

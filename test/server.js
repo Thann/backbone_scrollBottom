@@ -19,7 +19,6 @@ if (watcher) {
 			console.error(err)
 		else
 			console.log(stats.toString({colors: true}));
-
 	});
 	console.log("-- started webpack --");
 	return;
