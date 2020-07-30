@@ -15,6 +15,8 @@ const layoutView = Backbone.View.extend({
 	initialize() {
 		this._tmpl = _.template(this.template);
 		this.initScrollBottom();
+		// this.initScrollBottom(undefined, factor=.75);
+		// this.initScrollBottom(undefined, factor=1, offset=200);
 		let i = 0;
 		this.on('scroll:bottom', (e) => {
 			i++;
