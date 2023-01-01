@@ -19,13 +19,13 @@
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.3.0",
     "backbone": "^1.4.0",
     "eslint": "^7.5.0",
     "eslint-loader": "^4.0.2",
     "jquery": "^3.5.1",
     "nodemon": "github:thann/nodemon",
-    "webpack": "^4.44.0"
+    "webpack": "^5.75.0"
   },
   "eslintConfig": {
     "env": {
